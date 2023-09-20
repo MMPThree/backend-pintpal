@@ -36,7 +36,7 @@ RSpec.describe Review, type: :model do
         expect(review.errors[:city]).to_not be_empty
        end
 
-       it "is not valid without a city" do
+       it "is not valid without a state" do
         review = user.reviews.create(
         review_text: "Awwww lawwwd",
         city: "Dallas",
