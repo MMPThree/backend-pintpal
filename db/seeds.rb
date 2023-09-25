@@ -23,23 +23,27 @@ beer2 = Beer.create(
   style: "Golden Pilsner-style",
   abv: 4.2,
   description: "Balanced composition and a smooth, clean finish, it’s the party guest who is always invited and never overstays his welcome.",
-  image_url: "https://dosequis.com/wp-content/uploads/dos-equis-lager-especial-001-1.jpgg"
+  image_url: "https://static.specsonline.com/wp-content/uploads/2022/11/007231163012-1.jpg"
 )
 
 review1 = [
   {
   city: "Dallas",
   state: "TX",
-  review_text: "Awwww lawwwd",
-  rating: 5,
+  review_text: "Look...copper but closer to gold with a quickly dissolving white head. completely clear
+  Smell...the lightest of hints of the hop citrus and wheat. A wave of fresh grass
+  Taste...reminiscent to me of a German pils but a little bit maltier and not as dry on the finish. A pillow like resolve at the end with some sweetness.
+  Feel..Smooth and thin with a proper amount of carbonation giving an easy drinking
+  Overall...I would not buy this too many times a year but I don't buy many non craft pilsners at all soo...It is great on a hot day and some good eats . great vacation beer or staycation . I gotta be honest these are cooler dwellers from vaca....so gifted cheers",
+  rating: 3,
   user_id: 1,
   beer_id: beer1.id
 },
 {
   city: "Colorado Springs",
   state: "CO",
-  review_text: "One of my favs.",
-  rating: 3,
+  review_text: "This is the best beer you can buy at 7-Eleven. It has a decent amber color, and it tastes good. Like Beer. It's fairly smooth, without an unpleasant aftertaste. It's a step above your average adjunct lager. When I'm tired of the heaviness of stouts, and the bitterness of IPAs, I enjoy a glass of this beer. It reminds me of when I was young, having a beer with my dad, or drinking with my friends.",
+  rating: 4,
   user_id: 2,
   beer_id: beer1.id
 }
@@ -50,7 +54,7 @@ review2 = [
   {
   city: "Colorado Springs",
   state: "CO",
-  review_text: "Tasty",
+  review_text: "12 oz can (I don't drink from green beer bottles). Better than I thought it would be, not as good as I hoped it would be. Pretty balanced overall - not too bitter or sweet, just the right amount of bubbles. Definitely one of the better adjuncts. High end lawn mower beer. It'll definitely do when icy cold!",
   rating: 4,
   user_id: 2,
   beer_id: beer2.id
