@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: pintpal_backend_production
-  username: pintpal_backend
-  password: <%= ENV["PINTPAL_BACKEND_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
