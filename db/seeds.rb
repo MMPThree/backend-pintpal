@@ -41,13 +41,13 @@ review1 = [
   beer_id: beer1.id
 },
 {
-  username: user2.username,
-  city: "Colorado Springs",
-  state: "CO",
-  review_text: "This is the best beer you can buy at 7-Eleven. It has a decent amber color, and it tastes good. Like Beer. It's fairly smooth, without an unpleasant aftertaste. It's a step above your average adjunct lager. When I'm tired of the heaviness of stouts, and the bitterness of IPAs, I enjoy a glass of this beer. It reminds me of when I was young, having a beer with my dad, or drinking with my friends.",
-  rating: 4,
-  user_id: 2,
-  beer_id: beer1.id
+  username: user1.username,
+  city: "Dallas",
+  state: "TX",
+  review_text: "I've had better",
+  rating: 1,
+  user_id: 1,
+  beer_id: beer2.id
 }
 ]
 
@@ -63,13 +63,13 @@ review2 = [
   beer_id: beer2.id
 },
 {
-  username: user1.username,
-  city: "Dallas",
-  state: "TX",
-  review_text: "I've had better",
-  rating: 1,
-  user_id: 1,
-  beer_id: beer2.id
+  username: user2.username,
+  city: "Colorado Springs",
+  state: "CO",
+  review_text: "This is the best beer you can buy at 7-Eleven. It has a decent amber color, and it tastes good. Like Beer. It's fairly smooth, without an unpleasant aftertaste. It's a step above your average adjunct lager. When I'm tired of the heaviness of stouts, and the bitterness of IPAs, I enjoy a glass of this beer. It reminds me of when I was young, having a beer with my dad, or drinking with my friends.",
+  rating: 4,
+  user_id: 2,
+  beer_id: beer1.id
 }
 ]
 
