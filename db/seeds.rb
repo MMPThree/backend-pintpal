@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-user1 = User.where(email: "test1@example.com").first_or_create(password: "password", password_confirmation: "password")
+user1 = User.where(email: "test1@example.com", username: "beerlover").first_or_create(password: "password", password_confirmation: "password")
 
-user2 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
+user2 = User.where(email: "test2@example.com", username: "brewlover").first_or_create(password: "password", password_confirmation: "password")
 
 beer1 = Beer.create(
   name: "Modelo Especial",
@@ -28,6 +28,7 @@ beer2 = Beer.create(
 
 review1 = [
   {
+  username: "beerlover",
   city: "Dallas",
   state: "TX",
   review_text: "Look...copper but closer to gold with a quickly dissolving white head. completely clear
@@ -40,6 +41,7 @@ review1 = [
   beer_id: beer1.id
 },
 {
+  username: "brewlover",
   city: "Colorado Springs",
   state: "CO",
   review_text: "This is the best beer you can buy at 7-Eleven. It has a decent amber color, and it tastes good. Like Beer. It's fairly smooth, without an unpleasant aftertaste. It's a step above your average adjunct lager. When I'm tired of the heaviness of stouts, and the bitterness of IPAs, I enjoy a glass of this beer. It reminds me of when I was young, having a beer with my dad, or drinking with my friends.",
@@ -52,6 +54,7 @@ review1 = [
 
 review2 = [
   {
+  username: "brewlover",
   city: "Colorado Springs",
   state: "CO",
   review_text: "12 oz can (I don't drink from green beer bottles). Better than I thought it would be, not as good as I hoped it would be. Pretty balanced overall - not too bitter or sweet, just the right amount of bubbles. Definitely one of the better adjuncts. High end lawn mower beer. It'll definitely do when icy cold!",
@@ -60,6 +63,7 @@ review2 = [
   beer_id: beer2.id
 },
 {
+  username: "beerlover",
   city: "Dallas",
   state: "TX",
   review_text: "I've had better",

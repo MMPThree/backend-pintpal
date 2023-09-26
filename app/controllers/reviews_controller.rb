@@ -39,6 +39,6 @@ end
 
   private
   def review_params
-    params.require(:review).permit(:city, :state, :review_text, :rating, :beer_id, :user_id)
+    params.require(:review).permit(:city, :state, :review_text, :rating, :beer_id, :user_id, :username)
   end
 end
