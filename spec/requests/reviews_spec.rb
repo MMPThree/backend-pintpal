@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Reviews", type: :request do
   let(:user){User.create(
+   username: 'beerlover'
    email: 'test1@example.com',
    password: 'password',
    password_confirmation: 'password'
