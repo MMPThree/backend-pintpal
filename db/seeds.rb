@@ -28,7 +28,7 @@ beer2 = Beer.create(
 
 review1 = [
   {
-  username: "beerlover",
+  username: user1.username,
   city: "Dallas",
   state: "TX",
   review_text: "Look...copper but closer to gold with a quickly dissolving white head. completely clear
@@ -41,7 +41,7 @@ review1 = [
   beer_id: beer1.id
 },
 {
-  username: "brewlover",
+  username: user2.username,
   city: "Colorado Springs",
   state: "CO",
   review_text: "This is the best beer you can buy at 7-Eleven. It has a decent amber color, and it tastes good. Like Beer. It's fairly smooth, without an unpleasant aftertaste. It's a step above your average adjunct lager. When I'm tired of the heaviness of stouts, and the bitterness of IPAs, I enjoy a glass of this beer. It reminds me of when I was young, having a beer with my dad, or drinking with my friends.",
@@ -54,7 +54,7 @@ review1 = [
 
 review2 = [
   {
-  username: "brewlover",
+  username: user2.username,
   city: "Colorado Springs",
   state: "CO",
   review_text: "12 oz can (I don't drink from green beer bottles). Better than I thought it would be, not as good as I hoped it would be. Pretty balanced overall - not too bitter or sweet, just the right amount of bubbles. Definitely one of the better adjuncts. High end lawn mower beer. It'll definitely do when icy cold!",
@@ -63,7 +63,7 @@ review2 = [
   beer_id: beer2.id
 },
 {
-  username: "beerlover",
+  username: user1.username,
   city: "Dallas",
   state: "TX",
   review_text: "I've had better",
