@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Reviews", type: :request do
   let(:user){User.create(
-   username: 'beerlover'
+   username: 'beerlover',
    email: 'test1@example.com',
    password: 'password',
    password_confirmation: 'password'
@@ -22,7 +22,8 @@ RSpec.describe "Reviews", type: :request do
         state: "TX",
         review_text: "Awwww lawwwd",
         rating: 5,
-        beer_id: beer.id
+        beer_id: beer.id,
+        username: user.username
       )
       get '/reviews'
       reviews = JSON.parse(response.body)
@@ -44,7 +45,8 @@ RSpec.describe "Reviews", type: :request do
         state: "TX",
         review_text: "Awwww lawwwd",
         rating: 5,
-        beer_id: beer.id
+        beer_id: beer.id,
+        username: user.username
       )
       get "/reviews/#{review1.id}"
       expect(response).to have_http_status(200)
@@ -60,7 +62,8 @@ RSpec.describe "Reviews", type: :request do
           review_text: "Awwww lawwwd",
           rating: 5,
           beer_id: beer.id,
-          user_id: user.id 
+          user_id: user.id,
+          username: user.username
         }
       }
       post "/reviews", params: review_params
@@ -79,7 +82,8 @@ RSpec.describe "Reviews", type: :request do
           review_text: "Awwww lawwwd",
           rating: 5,
           beer_id: beer.id,
-          user_id: user.id 
+          user_id: user.id,
+          username: user.username
         }
       }
       post "/reviews", params: review_params
@@ -92,7 +96,8 @@ RSpec.describe "Reviews", type: :request do
           review_text: "Awwww lawwwd",
           rating: 5,
           beer_id: beer.id,
-          user_id: user.id 
+          user_id: user.id,
+          username: user.username 
         }
       }
 
@@ -112,7 +117,8 @@ RSpec.describe "Reviews", type: :request do
           review_text: "Awwww lawwwd",
           rating: 5,
           beer_id: beer.id,
-          user_id: user.id
+          user_id: user.id,
+          username: user.username
         }
       }
 
