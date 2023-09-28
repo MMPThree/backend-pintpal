@@ -1,0 +1,275 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/learnacademy/Desktop/pintpal-backend/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/models/jwt_denylist.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/helpers/beers_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/helpers/reviews_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/models/beer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/models/review.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/controllers/beers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          3,
+          3,
+          3,
+          3,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/controllers/reviews_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          3,
+          3,
+          3,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/controllers/users/registrations_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/controllers/users/sessions_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/learnacademy/Desktop/pintpal-backend/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1695850145
+  }
+}
