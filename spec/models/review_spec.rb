@@ -86,5 +86,17 @@ RSpec.describe Review, type: :model do
       )
         expect(review.errors[:username]).to_not be_empty
        end
-
+       it "is valid with all required attributes" do
+        review = user.reviews.create(
+          username: 'beerlover',
+          review_text: "Awwww lawwwd",
+          city: "Dallas",
+          state: "TX",
+          rating: 5,
+          beer_id: beer.id,
+          user_id: user.id
+        )
+        expect(review).to be_valid
+      end
+      
 end
