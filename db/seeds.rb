@@ -5,26 +5,40 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'csv'
+
 
 user1 = User.where(email: "test1@example.com", username: "beerlover").first_or_create(password: "password", password_confirmation: "password")
 
 user2 = User.where(email: "test2@example.com", username: "brewlover").first_or_create(password: "password", password_confirmation: "password")
 
-beer1 = Beer.create(
-  name: "Modelo Especial",
-  style: "Pilsner-style Lager",
-  abv: 4.4,
-  description: "An orange blossom honey aroma with a hint of herb.",
-  image_url: "https://www.modelousa.com/cdn/shop/files/Especial-02_0_1024x1024.jpg?v=1638951577"
-)
+beer_objects = {}
 
-beer2 = Beer.create(
-  name: "Dos Equis Lager Especial",
-  style: "Golden Pilsner-style",
-  abv: 4.2,
-  description: "Balanced composition and a smooth, clean finish, it’s the party guest who is always invited and never overstays his welcome.",
-  image_url: "https://static.specsonline.com/wp-content/uploads/2022/11/007231163012-1.jpg"
-)
+CSV.foreach(Rails.root.join('lib/seed_csv/beer-list.csv'), headers: true) do |row|
+    Beer.create( {
+    name: row["name"], 
+    style: row["style"],
+    abv: row["abv"], 
+    description: row["description"],
+    image_url: row["image_url"]
+  } 
+)   
+end
+# beer1 = Beer.create(
+#   name: "Modelo Especial",
+#   style: "Pilsner-style Lager",
+#   abv: 4.4,
+#   description: "An orange blossom honey aroma with a hint of herb.",
+#   image_url: "https://www.modelousa.com/cdn/shop/files/Especial-02_0_1024x1024.jpg?v=1638951577"
+# )
+
+# beer2 = Beer.create(
+#   name: "Dos Equis Lager Especial",
+#   style: "Golden Pilsner-style",
+#   abv: 4.2,
+#   description: "Balanced composition and a smooth, clean finish, it’s the party guest who is always invited and never overstays his welcome.",
+#   image_url: "https://static.specsonline.com/wp-content/uploads/2022/11/007231163012-1.jpg"
+# )
 
 review1 = [
   {
@@ -38,7 +52,7 @@ review1 = [
   Overall...I would not buy this too many times a year but I don't buy many non craft pilsners at all soo...It is great on a hot day and some good eats . great vacation beer or staycation . I gotta be honest these are cooler dwellers from vaca....so gifted cheers",
   rating: 3,
   user_id: 1,
-  beer_id: beer1.id
+  beer_id: Beer.find_by(name: "Modelo Especial")&.id
 },
 {
   username: user1.username,
@@ -47,7 +61,7 @@ review1 = [
   review_text: "I've had better",
   rating: 1,
   user_id: 1,
-  beer_id: beer2.id
+  beer_id: Beer.find_by(name: "Dos Equis Lager Especial")&.id
 }
 ]
 
@@ -60,7 +74,7 @@ review2 = [
   review_text: "12 oz can (I don't drink from green beer bottles). Better than I thought it would be, not as good as I hoped it would be. Pretty balanced overall - not too bitter or sweet, just the right amount of bubbles. Definitely one of the better adjuncts. High end lawn mower beer. It'll definitely do when icy cold!",
   rating: 4,
   user_id: 2,
-  beer_id: beer2.id
+  beer_id: Beer.find_by(name: "Dos Equis Lager Especial")&.id
 },
 {
   username: user2.username,
@@ -69,7 +83,7 @@ review2 = [
   review_text: "This is the best beer you can buy at 7-Eleven. It has a decent amber color, and it tastes good. Like Beer. It's fairly smooth, without an unpleasant aftertaste. It's a step above your average adjunct lager. When I'm tired of the heaviness of stouts, and the bitterness of IPAs, I enjoy a glass of this beer. It reminds me of when I was young, having a beer with my dad, or drinking with my friends.",
   rating: 4,
   user_id: 2,
-  beer_id: beer1.id
+  beer_id: Beer.find_by(name: "Modelo Especial")&.id
 }
 ]
 
